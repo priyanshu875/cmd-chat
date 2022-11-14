@@ -26,6 +26,6 @@ io.on("connection",(socket)=>{
 
 })
 
-server.listen(3001,()=>{
+server.listen(3001 || process.env.PORT,()=>{
     console.log("server started");
 });
